@@ -704,7 +704,7 @@ def getCCodeLangAndOffset() -> tuple:
         return lang, geo, tz
     # Due to ipapi limitations it will default to US
     except:
-        return 'en-US', 'US', '-480'
+        return 'en-in', 'IN', '-330'
 
 
 def resetTabs(browser: WebDriver):
@@ -1564,7 +1564,7 @@ def completeMSNShoppingGame(browser: WebDriver) -> bool:
         print("[MSN GAME] Checking if user is signed in ...")
         while tries <= 4:
             tries += 1
-            goToURL(browser, "https://www.msn.com/en-us/shopping")
+            goToURL(browser, "https://www.msn.com/en-in/shopping")
             waitUntilVisible(browser, By.TAG_NAME, 'shopping-page-base', 45)
             time.sleep(calculateSleep(15))
             try:
